@@ -2,7 +2,7 @@ import bcrypt
 import base64
 from typing import Union
 from fastapi import FastAPI
-from app.models import User  # Assuming the User class is defined in app.models
+from backend.models.models import User  # Assuming the User class is defined in app.models
 from db.supabase import create_supabase_client
 
 app = FastAPI()
