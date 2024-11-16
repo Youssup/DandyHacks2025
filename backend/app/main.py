@@ -67,3 +67,27 @@ def get_all_users():
     except Exception as e:
         print(f"Error: {e}")
         return {"message": "An error occurred while retrieving user data"}
+    
+# Update user
+@app.post("/update_user")
+def update_user(user: User):
+    try:
+        # Check if user exists
+        if not user_exists(value=user.username):
+            return {"message": "User does not exist"}
+
+        # Update user data
+        response = supabase.from_("users")\
+            .update({
+                "rating": user.rating,
+                "games_played": user.games_played,
+                "wins": user.wins,
+                "losses": user.losses
+            })\
+            .eq("username", user.username)\
+            .execute()
+
+        return {"message": "User updated successfully"}
+    except Exception as e:
+        print(f"Error: {e}")
+        return {"message": "An error occurred while updating user data"}
