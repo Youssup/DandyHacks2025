@@ -1,0 +1,2 @@
+url="https://jqpajlsnlyjywyupcqtj.supabase.co"
+api="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpxcGFqbHNubHlqeXd5dXBjcXRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE3Mjg5MjcsImV4cCI6MjA0NzMwNDkyN30.osmSDyuvxtOaSQfoVu0dhYWRRFAEaCnhysXi19FZz-k"
